@@ -4,7 +4,7 @@ let gdata = {};
     XMLHttpRequest.prototype.open = function() {
         if (arguments[1].startsWith("https://api.blooket.com/api/games?gameId=")) {
             this.addEventListener('load', function() {
-                console.log(JSON.parse(this.responseText));
+                gdata = JSON.parse(this.responseText);
             });   
         }
         
