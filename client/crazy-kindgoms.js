@@ -1,4 +1,4 @@
-let gid = prompt("Set id (search it in the blooket website, and copy from the address bar)")
+let gid = Object.values(document.getElementById('body'))[1].children[1]._owner.stateNode.props.id
 let bdata = {};
 
 
